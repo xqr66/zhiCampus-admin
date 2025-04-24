@@ -29,7 +29,8 @@ export const currentMenuList = [
 		key: "/author",
 		icon: <UserOutlined />,
 		children: [
-			{ key: "/author/whitelist/index", icon: <SmileOutlined />, children: undefined, label: "作者白名单" }
+			{ key: "/author/whitelist/index", icon: <SmileOutlined />, children: undefined, label: "作者白名单" },
+			{ key: "/author/blocklist/index", icon: <SmileOutlined />, children: undefined, label: "作者封禁" }
 		],
 		label: "用户管理"
 	}

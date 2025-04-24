@@ -41,3 +41,15 @@ export const updateAuthorWhiteApi = (authorId: number) => {
 export const delAuthorWhiteApi = (authorId: number) => {
 	return http.get<Login.ResAuthButtons>(`${PORT1}/author/whitelist/remove`, { authorId });
 };
+// 添加返回类型
+export const getAuthorBlockListApi = () => {
+	return http.get(`${PORT1}/author/blocklist/get`);
+};
+// 保存操作
+export const updateAuthorBlockApi = (authorId: number, blockDays: number) => {
+	return http.get(`${PORT1}/author/blocklist/add`, { authorId, blockDays });
+};
+// 删除操作
+export const delAuthorBlockApi = (authorId: number) => {
+	return http.get<Login.ResAuthButtons>(`${PORT1}/author/blocklist/remove`, { authorId });
+};

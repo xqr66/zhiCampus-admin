@@ -31,6 +31,14 @@ const columnRouter: Array<RouteObject> = [
 							title: "作者白名单",
 							key: "/author/zsxqlist/index"
 						}
+					},
+					{
+						path: "/author/blocklist/index",
+						element: lazyLoad(React.lazy(() => import("@/views/author/blocklist/index"))),
+						meta: {
+							title: "作者封禁",
+							key: "/author/blocklist/index"
+						}
 					}
 				]
 			}
